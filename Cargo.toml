@@ -1,0 +1,21 @@
+[package]
+name = "svincraft"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+bevy					= { version = "0.13", features = [ "wayland", "jpeg" ] }
+bevy_panorbit_camera	= { version = "0.16" }
+bevy_rapier3d			= { version = "0.25.0" }
+polyanya				= { git = "https://github.com/vleue/polyanya.git", branch = "radius-baking" }
+bevy_fps_controller		= { version = "0.2.5" }
+bevy_hanabi				= { version = "0.10" }
+bevy-scene-hook			= { version = "10.0.0" }
+bevy_vector_shapes		= { version = "0.7.0" }
+interpolation			= { version = "0.3" }
+bevy-inspector-egui		= { version = "0.23.4" }
+iyes_perf_ui			= { version = "0.2.3" }
+
+rand					= { version = "0.8.5" }
+itertools				= { version = "0.12" }
