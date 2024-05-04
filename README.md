@@ -6,6 +6,8 @@
 Player can mine resources with hand-drill, spawn new npcs and give them move and resource mining commands.  
 There is also reaction to collision with environment for drill, visual indication of the amount of mined resources,  
 a little touch on drill animation when left mouse button is released and indication that mining capacity is full.  
+
+
 The purpose of the project was to see how fast a prototype can be made using only freely available assets,  
 unmodified [Bevy Engine](https://bevyengine.org/) and a number of plugins for it to achieve some sort of gameplay  
 as fast as possible. (Before any polishing [this version](https://www.youtube.com/watch?v=DIbebxN5p7U) was made in about 3 weeks of working in the evenings)
@@ -23,16 +25,16 @@ Svincraft running on Steam Deck(see branch `steamdeck` for more info):
 `cargo run -r`
 
 ## Controls
-- WASD for movement
-- Shift - sprint
-- Ctrl - duck
-- Space - jump
-- Mouse Left Click (aiming at resource or non selectable entity) - initiate drilling
-- Mouse Left Click (aiming at selectable entity) - select entity (currently only npc or base building)
-- Mouse Right Click - give command to selected entity. (currentl onlyy move/mine resources for npc)
-- Shift + o - switch to pan-orbit camera for more rts-like overview
-- Numpad `+` - spawn npc at base building if player is looking at one
-- Numpad `*` - spawn stresstest batch with 20 bases and 8 npcs at each base that will instantly start mining resources
+- `WASD` - player movement
+- `Shift` - sprint
+- `Ctrl` - duck
+- `Space` - jump
+- `Mouse Left Click (aiming at resource or non selectable entity)` - initiate drilling
+- `Mouse Left Click (aiming at selectable entity)` - select entity (currently only npc or base building)
+- `Mouse Right Click` - give command to selected entity. (currentl onlyy move/mine resources for npc)
+- `Shift` + `o` - switch to pan-orbit camera for more rts-like overview
+- `Numpad +` - spawn npc at base building if player is looking at one
+- `Numpad *` - spawn stresstest batch with 20 bases and 8 npcs at each base that will instantly start mining resources
 
 ## Bevy plugins used
 - bevy_rapier3d for all in-game physics (https://github.com/dimforge/bevy_rapier)
