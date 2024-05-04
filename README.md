@@ -3,9 +3,9 @@
 ![svincraft_header](https://github.com/gavlig/svincraft/blob/master/assets/readme/header.gif)
 
 ### A first person game prototype with mechanics inspired by StarCraft
-Player can mine resources with hand-drill, spawn new npcs and give them move and resource mining commands.  
-There is also reaction to collision with environment for drill, visual indication of the amount of mined resources,  
-a little touch on drill animation when left mouse button is released and indication that mining capacity is full.  
+Player can mine resources with hand-drill, spawn new npcs and give them move and resource mining commands.
+There is also reaction to collision with environment for drill, visual indication of the amount of mined resources,
+a little touch on drill animation when left mouse button is released and indication that mining capacity is full.
 
 
 The purpose of the project was to see how fast a prototype can be made using only freely available assets,  
