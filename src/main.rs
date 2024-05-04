@@ -50,13 +50,13 @@ fn main() {
 			HanabiPlugin,
 			HookPlugin,
 			ShapePlugin::default(),
-			WorldInspectorPlugin::new(),
+			// WorldInspectorPlugin::new(),
 
 			bevy::diagnostic::FrameTimeDiagnosticsPlugin,
 			bevy::diagnostic::EntityCountDiagnosticsPlugin,
 			bevy::diagnostic::SystemInformationDiagnosticsPlugin,
 
-			PerfUiPlugin,
+			// PerfUiPlugin,
 		))
 
 		.run();

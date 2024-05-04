@@ -36,14 +36,14 @@ impl Plugin for SetupPlugin {
 			.add_plugins(
 				DefaultPlugins.set(WindowPlugin {
 					primary_window: Some(Window {
-						position: WindowPosition::At(IVec2::new(0, 0)),
-						resolution: (1920.0, 1080.0).into(),
+						mode: bevy::window::WindowMode::Fullscreen,
+						resolution: (1280.0, 800.0).into(),
 						cursor: Cursor {
 							visible: false,
 							grab_mode: CursorGrabMode::Locked,
 							..default()
 						},
-						present_mode: PresentMode::AutoNoVsync,
+						present_mode: PresentMode::AutoVsync,
 						..default()
 					}),
 					..default()

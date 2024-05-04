@@ -1,4 +1,4 @@
-# SvinCraft
+# SvinCraft (SteamDeck branch, see `How to build and upload` below!)
 
 ![svincraft_header](https://github.com/gavlig/svincraft/blob/master/assets/readme/header.gif)
 
@@ -12,15 +12,20 @@ as fast as possible. (Before any polishing [this version](https://www.youtube.co
 
 
 [![video demo](https://img.youtube.com/vi/mPkblvfRDiU/0.jpg)](https://www.youtube.com/watch?v=mPkblvfRDiU)  
-Svincraft running on Steam Deck(see branch `steamdeck` for more info):  
+Svincraft running on Steam Deck:  
 [![steamdeck](https://img.youtube.com/vi/rCx1QrgtoWo/0.jpg)](https://www.youtube.com/watch?v=rCx1QrgtoWo) 
 
-### How to build
+### How to build and upload
 0. Make sure you have Rust installed. See https://www.rust-lang.org/
-1. `cargo build -r`
+1. Make sure you have Zig installed. See [this link](https://ziglang.org/download/) or [this](https://github.com/ziglang/zig/wiki/Install-Zig-from-a-Package-Manager) 
+(Zig is required because your version of glibc might be different than what SteamOS expects and zigbuild so far was the easiest way to get older version without a hassle)
+2. install zigbuild: `cargo install cargo-zigbuild` [github link for curious](https://github.com/rust-cross/cargo-zigbuild)
+3. Run `build_for_steamdeck.sh`
+4. Follow (this)[https://partner.steamgames.com/doc/steamdeck/loadgames] wonderful official manual on how to upload game builds
+5. in `Title Upload` tab of `Steam Devkit Management Tool` find field `Local Folder` and set path to where `steamdeck_build` folder was created after `build_for_steamdeck.sh` finished running
 
 ### How to run
-`cargo run -r`
+Find `Devkit Game: SvinCraft` (or whatever you named it in `Title Upload` tab) on your SteamDeck and run the game, that's it!
 
 ## Controls
 - WASD for movement

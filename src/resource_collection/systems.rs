@@ -247,16 +247,16 @@ pub fn collected_resource_ui(
 
 		if let Ok(mut transform) = q_transform.get_mut(resource_icon_entities.purplite) {
 			transform.translation = Vec3::new(
-				x_right - 320.0,
-				(y_top - y_bottom) / 2.0 - 80.0,
+				x_right - 165.0,
+				(y_top - y_bottom) / 2.0 - 32.0,
 				target_entity_z,
 			);
 		}
 
 		if let Ok(mut transform) = q_transform.get_mut(resource_icon_entities.tealite) {
 			transform.translation = Vec3::new(
-				x_right - 150.0,
-				(y_top - y_bottom) / 2.0 - 80.0,
+				x_right - 65.0,
+				(y_top - y_bottom) / 2.0 - 32.0,
 				target_entity_z,
 			);
 		}

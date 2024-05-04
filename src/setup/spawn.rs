@@ -95,7 +95,7 @@ pub fn resource_ui(
 				scene : game_assets.purplite.clone(),
 				transform : Transform {
 					rotation: Quat::from_rotation_y(-0.3),
-					scale: Vec3::splat(30.0),
+					scale: Vec3::splat(10.0),
 					..default()
 				},
 				..default()
@@ -114,7 +114,7 @@ pub fn resource_ui(
 				scene : game_assets.tealite.clone(),
 				transform : Transform {
 					rotation: Quat::from_rotation_y(-1.7),
-					scale: Vec3::splat(30.0),
+					scale: Vec3::splat(10.0),
 					..default()
 				},
 				..default()
@@ -130,16 +130,16 @@ pub fn resource_ui(
 		TextBundle::from_section(
 			"0",
 			TextStyle {
-				font_size: 30.0,
+				font_size: 10.0,
 				color: Color::hex("bdbdbd").unwrap(),
 				..default()
 			},
 		)
 		.with_style(Style {
 			position_type: PositionType::Absolute,
-			top: Val::Px(50.0),
-			right: Val::Px(175.0),
-			min_width: Val::Px(100.0),
+			top: Val::Px(20.0),
+			right: Val::Px(115.0),
+			min_width: Val::Px(33.0),
 			..default()
 		}),
 	).id();
@@ -148,16 +148,16 @@ pub fn resource_ui(
 		TextBundle::from_section(
 			"0",
 			TextStyle {
-				font_size: 30.0,
+				font_size: 10.0,
 				color: Color::hex("bdbdbd").unwrap(),
 				..default()
 			},
 		)
 		.with_style(Style {
 			position_type: PositionType::Absolute,
-			top: Val::Px(50.0),
+			top: Val::Px(20.0),
 			right: Val::Px(10.0),
-			min_width: Val::Px(100.0),
+			min_width: Val::Px(33.0),
 			..default()
 		}),
 	).id();
@@ -230,7 +230,7 @@ pub fn crosshair(
 	materials	: &mut Assets<StandardMaterial>,
 	commands	: &mut Commands,
 ) -> Entity {
-	let crosshair_mesh = meshes.add(Rectangle::new(4.0, 15.0));
+	let crosshair_mesh = meshes.add(Rectangle::new(2.0, 7.0));
 	let crosshair_material = materials.add(StandardMaterial {
 		base_color : Color::WHITE,
 		unlit : true,
