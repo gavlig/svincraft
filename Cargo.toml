@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 
-bevy					= { version = "0.13", features = [ "wayland", "jpeg" ] }
+bevy					= { version = "0.13", features = [ "jpeg" ] }
 bevy_panorbit_camera	= { version = "0.16" }
 bevy_rapier3d			= { version = "0.25.0" }
 polyanya				= { git = "https://github.com/vleue/polyanya.git", branch = "radius-baking" }
